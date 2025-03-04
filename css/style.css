@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* ======================== */
+
+#main-container {
+    display: flex;
+}
+
+#main-container aside {
+    width: 20vw;
+    flex-shrink: 0;
+}
+
+#main-container main {
+    flex-grow: 1;
+}
+
+#main-container main header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#main-container main header h1 {
+    font-size: 2.5rem;
+}
+
+#object-fit-toggle {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+}
+
+#main-art-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main-art-container .image-placeholder {
+    width: 25;
+    aspect-ratio: 1/1;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ======================== */
+
+#main-container aside {
+    position: relative;
+    height: 100vh;
+}
+
+#logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#logo-container img {
+    display: block;
+    width: 50%;
+    aspect-ratio: 1/1;
+    background-color: #eee;
+    margin-bottom: 1rem;
+}
+
+#logo-container #artist-name {
+    font-size: 1.5rem;
+}
+
+#socmed-container {
+    position: absolute;
+    bottom: 1rem;
+}
+
+#main-container aside nav ul {
+    list-style: none;
+}
+
+#main-container aside nav ul li {
+    margin-bottom: 0.5rem;
+}
+
+#main-container aside nav ul li a {
+    color: #555;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#main-container aside nav ul li a:hover {
+    color: black;
+}
